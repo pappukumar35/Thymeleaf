@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+<h1>cheacking for the thmeleaf looping condition</h1>
+<h1>user <span th:text="${isActive} ? 'ACTIVE': 'NOT ACTIVE' "></span></h1>
+
+<h1 th:if="${gender}=='m'">male</h1>
+<h1 th:unless="${gender}=='m'">femal</h1>
+
+<div th:switch="${#lists.size(mylist)}">
+   <h1 th:case="'0'">List contain zero element</h1>
+   <h2 th:case="'1'">List contain one element</h2>
+   <h3 th:case="'*'">List conatin more then one element</h3>
+</div>
+
+</body>
+</html>

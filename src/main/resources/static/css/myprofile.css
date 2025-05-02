@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+	background:#e2e2e2;
+	
+}
+
+.container{
+	background:green;
+	padding:40px;
+	font-family:'Roboto'
+}
+
+.profile{
+	border-radius:50%;
+}
